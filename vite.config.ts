@@ -7,12 +7,4 @@ export default defineConfig({
     outDir: 'dist',
   },
   root: '.',
-  optimizeDeps: {
-    // Ensure ESM plugin is handled correctly
-    include: ['@vitejs/plugin-react'],
-    esbuildOptions: {
-      // Node.js 18 workaround for ESM plugins
-      plugins: [],
-    },
-  },
 });
